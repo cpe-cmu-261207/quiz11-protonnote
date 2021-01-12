@@ -7,13 +7,14 @@ document.getElementById("button-compute").addEventListener("click",function(even
 
     const lii = document.querySelector('#show-wow')
 
-    const lis = document.createElement()
+    const lis = document.createElement('ul')
 
     const list_n = document.createElement('li')
     const hh = document.createElement('h2')
     hh.innerHTML = num.value
     list_n.append(hh)
-    lii.append(list_n)
+    lis.append(list_n)
+    lii.append(lis)
 
 },false)
 
